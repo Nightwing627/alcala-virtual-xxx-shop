@@ -1,0 +1,72 @@
+// Vendor
+  // Bootstrap
+  // @import "~bootstrap/scss/bootstrap.scss";
+  @import "~bootstrap/dist/css/bootstrap.css";
+  @import "~bootstrap-vue/dist/bootstrap-vue.css";
+
+  // Alertify
+  // @import "~alertifyjs/build/css/alertify.min";
+  // @import "~alertifyjs/build/css/themes/default.min";
+
+  // vue-datetime
+  // @import '~vue-datetime/dist/vue-datetime.min';
+  // @import "./vendor/vue-datetime.scss";
+
+  // Sweet alert
+  // @import "~sweetalert2/dist/sweetalert2.min.css";
+
+  // Swiper carousel vue
+  @import "~swiper/dist/css/swiper.css";
+
+  // Font awesome 5.10.1
+    // == Por medio de NPM
+    // $fa-font-path: "../extras/css/font-awesome/webfonts";
+    // @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+    // @import "~@fortawesome/fontawesome-free/scss/solid.scss";
+    // @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+    // == Manualmente por medio de /public/extras ...
+    $fa-font-path: "../extras/css/font-awesome/webfonts";
+    @import "public/extras/css/font-awesome/scss/fontawesome.scss";
+    @import "public/extras/css/font-awesome/scss/solid.scss";
+    @import "public/extras/css/font-awesome/scss/brands.scss";
+    @import "public/extras/css/font-awesome/scss/regular.scss";
+    @import "public/extras/css/font-awesome/scss/duotone.scss";
+    @import "public/extras/css/font-awesome/scss/light.scss";
+
+// Utils
+@import "./utils/toolbox.scss";
+@import "./utils/variables.scss";
+@import "./utils/animations.scss";
+
+// Base
+@import "./base/global.scss";
+@import './base/fonts.scss';
+
+// Eements
+@import "./elements/titles.scss";
+@import "./elements/color-option.scss";
+
+// Layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/box-breadcrumb.scss";
+@import "./layout/sample-product.scss";
+@import "./layout/modals.scss";
+
+// Pages
+@import "./pages/home.scss";
+@import "./pages/results.scss";
+@import "./pages/guarantee.scss";
+@import "./pages/payments-shipments.scss";
+@import "./pages/about-us.scss";
+@import "./pages/faqs.scss";
+@import "./pages/stores.scss";
+@import "./pages/product-description.scss";
+@import "./pages/contact.scss";
+@import "./pages/text-page.scss";
+// @import "./pages/blog.scss";
+
+@import "./pages/cart.scss";
+@import "./pages/user-access.scss";
+@import "./pages/user-account.scss";

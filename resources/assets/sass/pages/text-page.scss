@@ -1,0 +1,37 @@
+#text-page{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  min-height: 77vh;
+  color: #515151;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: justify;
+  background-color: #f6f6f6;
+
+  .page-title{
+    text-align: center;
+    font-size: 1.65rem;
+    font-weight: 500;
+  }
+
+  h5{
+    font-size: 1.1rem;
+  }
+  h6{
+    font-size: 0.95rem;
+  }
+
+  ul, ol{
+    padding-left: 16px;
+    li{}
+  }
+
+  @media screen and (max-width: 1199px){
+    padding-top: 65px;
+  }
+  @media screen and (max-width: 575px){
+    .page-title{
+      font-size: 1.45rem;
+    }
+  }
+}

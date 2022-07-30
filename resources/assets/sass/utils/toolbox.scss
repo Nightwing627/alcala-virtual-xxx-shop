@@ -1,0 +1,99 @@
+/* ================ Variables ================== */
+$color--background: #109173;
+$color--text: #757575;
+$color--text2: #fff;
+$color--facebook: #3b5998;
+$color--youtube: #c4302b;
+$color--twitter: #00aced;
+/* ================ Variables ================== */
+/* ================ Fuentes ================== */
+/* ================ Fuentes ================== */
+/* ================ Mixins (include) ================== */
+@mixin cp-property($property,$style){
+    #{$property} : $style;
+    -webkit-#{$property} : $style;
+    -moz-#{$property} : $style;
+    -o-#{$property} : $style;
+    -sm-#{$property} : $style;
+}
+
+@mixin cp-style($property,$style,$val){
+    #{$property} : $style#{$val};
+    #{$property} : -webkit-$style#{$val};
+    #{$property} : -moz-$style#{$val};
+    #{$property} : -o-$style#{$val};
+    #{$property} : -sm-$style#{$val};
+}
+@mixin center-flex-xy(){
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-item-align: end !important;
+  align-self: flex-end !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+@mixin transition($time){
+    -webkit-transition: all $time ease-in-out;
+    -moz-transition: all $time ease-in-out;
+    -ms-transition: all $time ease-in-out;
+    -o-transition: all $time ease-in-out;
+    transition: all $time ease-in-out;
+}
+
+@mixin placeholder($color, $fweightm, $fstyle, $size) {
+  ::-webkit-input-placeholder {
+    color: $color;
+    font-weight: $fweightm;
+    font-style: $fstyle;
+    font-size: $size;
+  }
+  ::-moz-placeholder {
+    color: $color;
+    font-weight: $fweightm;
+    font-style: $fstyle;
+    font-size: $size;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+    font-weight: $fweightm;
+    font-style: $fstyle;
+    font-size: $size;
+  }
+  :-moz-placeholder {
+    color: $color;
+    font-weight: $fweightm;
+    font-style: $fstyle;
+    font-size: $size;
+  }
+}
+/* ================ Mixins (include) ================== */
+/* ================ Herencias (extend) ================== */
+%center-align{
+	position: absolute;
+	@include cp-property(transform,translateX(-50%) translateY(-50%));
+	left: 50%;
+	top: 50%;
+}
+
+%vertical-align{
+	position: absolute;
+	@include cp-property(transform, translateY(-50%));
+	top: 50%;
+}
+
+%horizontal-align{
+	position: absolute;
+	@include cp-property(transform, translateX(-50%));
+	left: 50%;
+}
+.flex-center-xy{
+  display: flex;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+/* ================ Herencias (extend) ================== */

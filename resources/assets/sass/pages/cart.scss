@@ -1,0 +1,34 @@
+#cart-page{
+  min-height: 88vh;
+
+  .col-cart-data{
+    a{
+      cursor: pointer;
+    }
+  }
+
+  .main-box{
+    .col-menu{
+      @media screen and (min-width: 992px){
+        flex: 0 0 275px;
+        max-width: 275px;
+      }
+
+      .box-menu{
+        .item{
+          .btn-menu.router-link-active{
+            color: #fff;
+            background-color: $pink;
+          }
+        }
+      }
+    }
+
+    .col-cart-data{
+      .link-sm {
+        cursor: pointer;
+        font-size: 14px;
+      }
+    }
+  }
+}

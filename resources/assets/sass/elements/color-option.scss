@@ -1,0 +1,64 @@
+.box-color-opt{
+  display: inline-block;
+  padding: 3px 3px;
+  margin: 6px 4px;
+  width: 35px;
+  height: 35px;
+  line-height: 1;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  @include transition(100ms);
+
+  .color{
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: inherit;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.14);
+    @extend .placed-backg;
+  }
+  .img-outli{
+    border-color: #dbdbdb;
+  }
+
+  &:hover{
+    border-color: rgba(0,0,0,0.1);
+  }
+
+  &.active{
+    border-color: rgba(0,155,222,0.4) !important;
+  }
+
+  &.opt-sm{
+    padding: 2px !important;
+    width: 25px !important;
+    height: 25px !important;
+
+    .color{
+      width: 17px !important;
+      height: 17px !important;
+    }
+  }
+}
+
+// == colores usando input radio de bootstrap-vue ==
+.input-color-opt{
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  .custom-control-label{
+    &:before, &:after{
+      visibility: visible;
+      opacity: 0;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label .box-color-opt{
+    border-color: rgba(0,155,222,0.4) !important
+  }
+}
+// ==

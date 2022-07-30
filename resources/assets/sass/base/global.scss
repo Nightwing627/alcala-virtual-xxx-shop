@@ -1,0 +1,66 @@
+body,html{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	color: #000000;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+	margin-bottom: 0px;
+}
+
+// Container
+.oversized-container{
+	@media screen and (min-width: 992px){
+		max-width: 100%;
+	}
+	@media screen and (min-width: 1650px){
+		max-width: 1600px;
+	}
+}
+
+// Backgrounds
+.placed-backg{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Remove outline
+select:focus, select:active, select:hover, button:focus, button:active, button:hover,
+input:focus, input:active, input:hover, textarea:focus, textarea:active, textarea:hover{
+  box-shadow: none !important;
+  outline: none !important;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow:none !important;
+}
+
+.noselect{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none; /* Non-prefixed version, currently*/
+}
+
+.ic-whatsapp{
+	@extend .flex-center-xy;
+	position: fixed;
+	padding-bottom: 2px;
+	bottom: 16px;
+	left: 19px;
+	width: 60px;
+	height: 60px;
+	color: #ffffff !important;
+	text-align: center;
+	font-size: 32px;
+	background-color: #25d366;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 88;
+
+	&:hover{
+	text-decoration: none;
+	}
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.48" height="18.48" viewBox="0 0 18.48 18.48">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="18.48" height="18.48" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ic_nav_nada_copy" data-name="ic/nav/nada copy" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <g id="Page_1" data-name="Page 1" transform="translate(0.75 0.75)">
+      <path id="Stroke_1" data-name="Stroke 1" d="M11.162,1.915a6.539,6.539,0,1,1-9.247,0A6.54,6.54,0,0,1,11.162,1.915Z" transform="translate(0 0)" fill="none" stroke="#9b9b9b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Stroke_3" data-name="Stroke 3" d="M0,0,5.818,5.818" transform="translate(11.162 11.162)" fill="none" stroke="#9b9b9b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

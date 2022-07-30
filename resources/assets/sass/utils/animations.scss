@@ -1,0 +1,11 @@
+.trans-150{
+  @include transition(150ms);
+}
+
+.trans-250{
+  @include transition(250ms);
+}
+
+.trans-400{
+  @include transition(400ms);
+}
